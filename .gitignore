@@ -19,3 +19,5 @@
 .locum
 
 config/deploy.rb
+
+config/secrets.yml
