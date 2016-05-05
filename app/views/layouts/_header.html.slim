@@ -1,0 +1,10 @@
+.container.header
+  .col-md-10.col-md-offset-1
+    ul.nav.nav-justified
+      li.logo= link_to main_path do
+        = image_tag 'logo.jpg'
+      li= link_to 'Главная', main_path
+      li= link_to 'Каталог', catalog_path
+      li= link_to 'О компании', about_path
+      li= link_to 'Контакты', contacts_path
+      li.callback= link_to 'Обратный звонок', main_path

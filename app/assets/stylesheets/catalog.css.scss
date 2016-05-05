@@ -1,0 +1,42 @@
+.catalog {
+  p {
+    font-size: 16px;
+    color: gray;
+  }
+}
+.catalog-card {
+  padding: 16px;
+  height: 280px;
+  p {
+    color: white;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  .title {
+    position: relative;
+    p {
+      padding: 0;
+    }
+  }
+  p.price {
+    display: block;
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    bottom: 20px;
+    top: auto;
+    font-size: 26px;
+    padding: 0;
+    font-weight: 200;
+    color: #444;
+    width: auto;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .image,
+  .title {
+    width: 50%
+  }
+}

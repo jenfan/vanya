@@ -1,0 +1,58 @@
+.container-fluid.container-breadcrumbs
+  .container
+    .col-md-10.col-md-offset-1
+      ol.breadcrumb
+        li= link_to 'Главная', root_path
+        li= link_to 'Каталог', catalog_path
+        li= link_to 'Б-17', '#'
+
+.container.product
+  .col-md-10.col-md-offset-1
+    .col-md-7.images
+      .col-xs-12.col-md-12
+        = image_tag 'dom1.jpg', class:'thumbnail'
+      .col-xs-6.col-md-4
+        = link_to '#', class:'thumbnail' do
+          = image_tag 'dom1.jpg'
+      .col-xs-6.col-md-4
+        = link_to '#', class:'thumbnail' do
+          = image_tag 'dom1.jpg'
+
+    .col-md-5.info
+      h1 Проект Б-17
+      .description
+        p Общая площадь: 70,8 м2
+        p Жилая площадь: 35,5 м2
+        p 1этажа - 66,5 м2
+        br
+        p Цена в стандартной <br> комплектации:
+        p.price 625 400 руб.
+
+  .col-md-10.col-md-offset-1.footer-description
+    hr
+    p Фундамент:отсутствует
+    p Наружные стены и перегородки: из профилированного бруса 145х145мм естественной влажности, укладывается на межвенцовый уплотнитель, закрепляется между собой деревянными негелями;
+    p Пол первого этажа: черновой настил доска 25мм, лаги пола из бруса 100х200мм, без чистого пола, без утепления и пароизоляции;
+    hr
+
+  .col-md-10.col-md-offset-1.footer-form
+    .col-md-7
+      h3 Если у вас есть вопросы <br>оставьте заявку
+      p Вы можете оставить предварительную заявку на понравившийся Вам проект, и в ближайшее время с Вами свяжется наш менеджер. Заявка не накладывает никаких обязательств, а является щапросом только на получение информации.
+    .col-md-5
+      form
+        .form-group
+          label for="exampleInputEmail1" Имя
+          input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"
+        .form-group
+          label for="telefon" Телефон
+          input type="password" class="form-control" id="telefon" placeholder="Password"
+        .form-group
+          label for="message" Сообщение
+          textarea class="form-control" rows="3" id='message'
+        .form-group
+          input type="submit" class="btn button" value='ОСТАВИТЬ ЗАЯВКУ'
+
+
+
+

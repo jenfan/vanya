@@ -1,0 +1,35 @@
+.container.product {
+  p {
+    font-size: 16px;
+  }
+  p, h3, label {
+    color: gray;
+  }
+  p.price {
+    font-size: 34px;
+    color: #36B774;
+  }
+  .images {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .footer-description {
+    padding: 50px;
+  }
+  .footer-form {
+    padding: 30px;
+    input[type=submit] {
+      padding: 15px 40px;
+      font-size: 18px;
+      font-weight: 200;
+      color: #ccc;
+      background: none;
+      border: 1px solid #ccc;
+    }
+  }
+}
+.container.product {
+  margin-top: 60px;
+}

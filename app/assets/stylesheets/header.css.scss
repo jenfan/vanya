@@ -1,0 +1,55 @@
+.nav {
+  li a {
+    color: grey;
+    border-bottom: 5px solid white;
+    height: 100%;
+    &:hover {
+      border-bottom: 5px solid #47C885;
+      color: #333;
+      background: none;
+    }
+  }
+  li {
+    height: 100%;
+    // overflow: hidden;
+  }
+  .logo {
+    a {
+      display: inline-block;
+      line-height: 55px;
+      padding: 0;
+      width: 120px;
+      height: 30px;
+    }
+    img {
+      width: 120px;
+      height: 30px;
+    }
+  }
+}
+
+.header {
+  .callback {
+  background: #47C885;
+  font-size: 20px;
+  font-weight: 200;
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+
+    &:hover {
+      background: #47C885;
+      background: #52D38F;
+    }
+    a {
+      color: white;
+      border-bottom: 0px;
+    }
+    &:hover {
+      a {
+        color: white;
+        border: 0;
+      }
+    }
+  }
+}

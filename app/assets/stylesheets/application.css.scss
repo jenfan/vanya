@@ -1,0 +1,64 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require reset
+ *= require bootstrap.min
+ *= require bootstrap-theme.min
+ *= require header
+ *= require main
+ *= require catalog
+ *= require product
+ *= require_self
+ */
+
+
+.container-fluid {
+  height:100%;
+  display:table;
+  width: 100%;
+  padding: 0;
+}
+
+.container-breadcrumbs {
+  background-color: #f5f5f5;
+}
+
+.row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
+
+.btn {
+  border-radius: 0;
+  background-color: #36B774;
+  color: white;
+  padding: 6px 10px;
+}
+.btn:hover {
+  background-color: #47C885;
+  color: white;
+  padding: 6px 10px;
+}
+
+ol.breadcrumb {
+  margin-bottom: 0;
+  padding-left: 0;
+  li+li:before {
+    padding:0;
+    padding-right: 20px;
+  }
+  li {
+    padding: 10px 0;
+    a {
+      color: #999;
+      padding: 15px 30px 15px 0;
+    }
+  }
+
+}
