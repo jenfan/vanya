@@ -42,13 +42,12 @@ group :production do
   gem 'unicorn'
 end
 
+gem 'capistrano', github: 'capistrano/capistrano', ref: '96a16', group: :development
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'capistrano', '~> 3.1'
-  gem 'capistrano-rails'
-  gem 'capistrano-rvm'
 end
