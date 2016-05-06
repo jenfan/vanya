@@ -39,7 +39,13 @@
   font-size: 18px;
   overflow: hidden;
   white-space: nowrap;
-
+    img {
+      position: relative;
+      height: 15px;
+      margin-top: -2px;
+      margin-right: 10px;
+      margin-left: -10px
+    }
     &:hover {
       background: #47C885;
       background: #52D38F;
@@ -47,6 +53,7 @@
     a {
       color: white;
       border-bottom: 0px;
+      position: relative;
     }
     &:hover {
       a {

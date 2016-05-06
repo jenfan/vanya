@@ -7,4 +7,7 @@
       li= link_to 'Каталог', catalog_path
       li= link_to 'О компании', about_path
       li= link_to 'Контакты', contacts_path
-      li.callback= link_to 'Обратный звонок', main_path
+      li.callback
+        = link_to main_path do
+          = image_tag 'trubka.svg'
+          | Обратный звонок
