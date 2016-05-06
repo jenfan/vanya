@@ -1,6 +1,6 @@
 .main.container-fluid {
   height: 500px;
-  background: image-url('main.jpg') no-repeat center top;
+  background: image-url('main.jpg') no-repeat center center;
   background-size: 100% auto; /* width and height, can be %, px or whatever. */
 }
 
@@ -24,14 +24,15 @@
   .title {
     background-color: #47C885;
     color: white;
-    padding: 15px;
+    padding: 20px;
     h3, h4 {
       margin: 0;
-      padding: 0 10px;
+      padding: 0;
       padding-bottom: 10px;
+      font-weight: bold;
     }
     p {
-      padding: 0 10px;
+      padding: 0;
       margin: 0;
     }
   }
@@ -56,14 +57,15 @@
     height: 100%;
     background-color: #47C885;
     color: white;
-    padding: 15px;
+    padding: 20px;
     h1 {
       margin: 0;
-      padding: 0 10px;
+      padding: 0;
       padding-bottom: 20px;
+      font-weight: bold;
     }
     p {
-      padding: 0 10px;
+      padding: 0;
       margin: 0;
     }
   }

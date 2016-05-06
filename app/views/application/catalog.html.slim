@@ -1,83 +1,77 @@
-.container-fluid.container-breadcrumbs
+.main-catalog
+  .container-fluid.container-breadcrumbs
+    .container
+      .col-md-10.col-md-offset-1
+        ol.breadcrumb
+          li= link_to 'Главная', root_path
+          li= link_to 'Каталог', catalog_path
+
+  br
+  br
+  br
+  br
+
   .container
-    .col-md-10.col-md-offset-1
-      ol.breadcrumb
-        li= link_to 'Главная', root_path
-        li= link_to 'Каталог', catalog_path
-        li= link_to 'Б-17', '#'
-
-.container.catalog
-  .col-md-10.col-md-offset-1
-    h1 Дома из бруса
-    hr
-
-    p Фундамент отсутствует
-    p Наружные стены и перегородки: из профилированного бруса 145х145мм естественной влажности, укладывается на межвенцовый уплотнитель, закрепляется между собой деревянными нагелями;
-    p Пол первого этажа: черновой настил доска 25мм, лаги пола из бруса 100х200мм, без чистового пола, без утепления и параизоляции;
-    p Потолок первого этажа: перекрытие 1-го этажа: 2.7м;
-    p Наружные стены и перегородки 2-го этажа: из профилированного бруса 145х145мм естественной влажности, укладывается на межвенцовый уплотнитель, закрепляется между собой деревянными нагелями;
-    p Стропильная система: из доски 50х100мм с шагом 600мм из обрезного материала;
-    p Покрытие кровли: рубероид
-    p Окна, двери, лестница: отсутствуют;
-    p Терраса/балкон: открытая, стойки из бруса с компенсаторами высоты, ограждение из бруса и поручня.
-
-    hr
-
     .row
-      = link_to product_path do
-        .col-md-6.catalog-card
-          .title.right
-            h2 Проект Б-17
-            p Замечательные домики из цельного бруса под ключ со всеми гарантиями
-            p.price 625.500 руб
-          .image.left
-            =image_tag 'dom1.jpg'
-      = link_to product_path do
-        .col-md-6.catalog-card
-          .title.right
-            h2 Проект Б-17
-            p Замечательные домики из цельного бруса под ключ со всеми гарантиями
-            p.price 625.500 руб
-          .image.left
-            =image_tag 'dom1.jpg'
-      = link_to product_path do
-        .col-md-6.catalog-card
-          .title.right
-            h2 Проект Б-17
-            p Замечательные домики из цельного бруса под ключ со всеми гарантиями
-            p.price 625.500 руб
-          .image.left
-            =image_tag 'dom1.jpg'
-      = link_to product_path do
-        .col-md-6.catalog-card
-          .title.right
-            h2 Проект Б-17
-            p Замечательные домики из цельного бруса под ключ со всеми гарантиями
-            p.price 625.500 руб
-          .image.left
-            =image_tag 'dom1.jpg'
-      = link_to product_path do
-        .col-md-6.catalog-card
-          .title.right
-            h2 Проект Б-17
-            p Замечательные домики из цельного бруса под ключ со всеми гарантиями
-            p.price 625.500 руб
-          .image.left
-            =image_tag 'dom1.jpg'
-      = link_to product_path do
-        .col-md-6.catalog-card
-          .title.right
-            h2 Проект Б-17
-            p Замечательные домики из цельного бруса под ключ со всеми гарантиями
-            p.price 625.500 руб
-          .image.left
-            =image_tag 'dom1.jpg'
+      .col-md-12
+        .col-md-10.col-md-offset-1
+          = link_to doma_path('doma_iz_brusa') do
+            .col-md-4.house-card
+              .image
+                =image_tag 'dom1.jpg'
+              .title
+                h4 Дома из бруса
+                p Замечательные домики из цельного бруса под ключ со всеми гарантиями
 
+          = link_to doma_path('doma_iz_brusa') do
+            .col-md-4.house-card
+              .image
+                =image_tag 'dom2.jpg'
+              .title
+                h4 Каркасно-щитовые
+                p Замечательные домики из цельного бруса под ключ со всеми гарантиями
 
-    p Разработка проекта
-    p Фундаменты
-    p Силовой комплект (стены, балки перекрытия, черновой настил по балкам, стропильная система)
-    p Крыша (утепление, кровельный материал)
-    p Отделка под ключ
-    p Инженерные коммуникации
-    p Заборы
+          = link_to doma_path('doma_iz_brusa') do
+            .col-md-4.house-card
+              .image
+                =image_tag 'dom3.jpg'
+              .title
+                h4 Дома из ОЦБ
+                p Замечательные домики из цельного бруса под ключ со всеми гарантиями
+
+  .container
+    .row
+      .col-md-12
+        = link_to doma_path('doma_iz_brusa') do
+          .col-md-10.col-md-offset-1.house-card2
+            .image.left
+              = image_tag 'dom2.jpg'
+            .title.right
+              h1 Дома, беседки, бани, под ключ и&nbsp;с&nbsp;гарантией
+              p Замечательные домики из цельного бруса под ключ со всеми гарантиями
+  .container
+    .row
+      .col-md-12
+        .col-md-10.col-md-offset-1
+          = link_to doma_path('doma_iz_brusa') do
+            .col-md-4.house-card
+              .image
+                =image_tag 'dom1.jpg'
+              .title
+                h4 Дома из бруса
+                p Замечательные домики из цельного бруса под ключ со всеми гарантиями
+          = link_to doma_path('doma_iz_brusa') do
+            .col-md-4.house-card
+              .image
+                =image_tag 'dom2.jpg'
+              .title
+                h4 Каркасно-щитовые
+                p Замечательные домики из цельного бруса под ключ со всеми гарантиями
+
+          = link_to doma_path('doma_iz_brusa') do
+            .col-md-4.house-card
+              .image
+                =image_tag 'dom3.jpg'
+              .title
+                h4 Дома из ОЦБ
+                p Замечательные домики из цельного бруса под ключ со всеми гарантиями

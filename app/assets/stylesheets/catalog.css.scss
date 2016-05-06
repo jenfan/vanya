@@ -1,3 +1,11 @@
+.main-catalog {
+  .house-card {
+    padding: 10px;
+  }
+  .house-card2 {
+    padding: 10px 25px;
+  }
+}
 .catalog {
   p {
     font-size: 16px;
@@ -38,5 +46,11 @@
   .image,
   .title {
     width: 50%
+  }
+}
+.house-card,
+.house-card2 {
+  &:hover {
+    opacity: 0.9;
   }
 }

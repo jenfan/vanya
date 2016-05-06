@@ -9,6 +9,9 @@ class ApplicationController < ActionController::Base
   def catalog
   end
 
+  def doma
+  end
+
   def about
   end
 
@@ -16,6 +19,5 @@ class ApplicationController < ActionController::Base
   end
 
   def product
-
   end
 end

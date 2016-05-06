@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'main', to: 'application#main'
   get 'contacts', to: 'application#contacts'
   get 'catalog', to: 'application#catalog'
+  get 'catalog/:id', to: 'application#doma', as: :doma
   get 'about', to: 'application#about'
   get 'product', to: 'application#product'
 
