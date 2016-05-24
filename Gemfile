@@ -4,7 +4,7 @@ gem 'slim'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem 'paperclip', git: "git://github.com/thoughtbot/paperclip.git"
-gem 'awesome_print'
+
 gem "breadcrumbs_on_rails"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
@@ -41,7 +41,8 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'pry'
-  gem 'capistrano', github: 'capistrano/capistrano', ref: '96a16', group: :development
+  gem 'awesome_print'
+  gem 'capistrano', github: 'capistrano/capistrano', ref: '96a16'
 end
 
 group :production do
