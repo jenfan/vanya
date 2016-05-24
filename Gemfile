@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'slim'
-
+gem 'activeadmin', github: 'activeadmin'
+gem 'devise'
+gem 'paperclip', git: "git://github.com/thoughtbot/paperclip.git"
+gem 'awesome_print'
+gem "breadcrumbs_on_rails"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
@@ -36,18 +40,18 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'pry'
+  gem 'capistrano', github: 'capistrano/capistrano', ref: '96a16', group: :development
 end
 
 group :production do
   gem 'unicorn'
 end
 
-gem 'capistrano', github: 'capistrano/capistrano', ref: '96a16', group: :development
-
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-
+  gem 'quiet_assets'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end

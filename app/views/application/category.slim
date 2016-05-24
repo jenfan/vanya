@@ -1,0 +1,23 @@
+.container-fluid.container-breadcrumbs
+  .container
+    .col-md-10.col-md-offset-1
+      = render 'layouts/breadcrumbs'
+
+.container.catalog
+  .col-md-10.col-md-offset-1
+    h1 Дома из бруса
+    hr
+    == @category.header
+    hr
+
+    .row
+      = render @products
+
+
+    p Разработка проекта
+    p Фундаменты
+    p Силовой комплект (стены, балки перекрытия, черновой настил по балкам, стропильная система)
+    p Крыша (утепление, кровельный материал)
+    p Отделка под ключ
+    p Инженерные коммуникации
+    p Заборы

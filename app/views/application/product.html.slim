@@ -1,32 +1,29 @@
 .container-fluid.container-breadcrumbs
   .container
     .col-md-10.col-md-offset-1
-      ol.breadcrumb
-        li= link_to 'Главная', root_path
-        li= link_to 'Каталог', catalog_path
-        li= link_to 'Б-17', '#'
+      = render 'layouts/breadcrumbs'
 
 .container.product
   .col-md-10.col-md-offset-1
     .col-md-7.images
       .col-xs-12.col-md-12
-        = image_tag 'dom1.jpg', class:'thumbnail'
+        = image_tag @product.image, class:'thumbnail'
       .col-xs-6.col-md-4
         = link_to '#', class:'thumbnail' do
-          = image_tag 'dom1.jpg'
+          = image_tag @product.image
       .col-xs-6.col-md-4
         = link_to '#', class:'thumbnail' do
-          = image_tag 'dom1.jpg'
+          = image_tag @product.image
 
     .col-md-5.info
-      h1 Проект Б-17
+      h1= @product.title
       .description
         p Общая площадь: 70,8 м2
         p Жилая площадь: 35,5 м2
         p 1этажа - 66,5 м2
         br
         p Цена в стандартной <br> комплектации:
-        p.price 625 400 руб.
+        p.price= price(@product.price)
 
   .col-md-10.col-md-offset-1.footer-description
     hr

@@ -1,10 +1,17 @@
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   get 'main', to: 'application#main'
   get 'contacts', to: 'application#contacts'
   get 'catalog', to: 'application#catalog'
-  get 'catalog/:id', to: 'application#doma', as: :doma
+  get 'catalog/:category_url', to: 'application#category', as: :category
   get 'about', to: 'application#about'
-  get 'product', to: 'application#product'
+  # get 'product/:id', to: 'application#product', as: :product
+
+  scope '/catalog' do
+    resources :categories
+    get ':categories/:id', to: 'application#product', as: :product
+  end
 
   root 'application#main'
   # The priority is based upon order of creation: first created -> highest priority.
