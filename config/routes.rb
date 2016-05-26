@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   scope '/catalog' do
     resources :categories
-    get ':categories/:id', to: 'application#product', as: :product
+    get ':category_url/:id', to: 'application#product', as: :product
   end
 
   root 'application#main'

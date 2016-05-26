@@ -4,6 +4,7 @@ gem 'slim'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem 'paperclip', git: "git://github.com/thoughtbot/paperclip.git"
+gem 'yaml_db'
 
 gem "breadcrumbs_on_rails"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -51,6 +52,7 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
+  gem 'mysql2'
   gem 'web-console', '~> 2.0'
   gem 'quiet_assets'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring

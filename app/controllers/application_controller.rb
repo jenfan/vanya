@@ -17,6 +17,7 @@ class ApplicationController < ActionController::Base
 
   def product
     @product = Product.find(params[:id])
+    add_breadcrumb @product.title, product_path(@category.url, @product.id) if @product
   end
 
   def about
