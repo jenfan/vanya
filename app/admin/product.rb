@@ -1,5 +1,5 @@
 ActiveAdmin.register Product do
-  permit_params :title, :description, :price, :image, :category_id
+  permit_params :title, :description, :price, :image, :category_id, :remote_url
 
   index do
     selectable_column
@@ -20,6 +20,7 @@ ActiveAdmin.register Product do
       f.input :category, as: :select
       f.input :price
       f.input :image
+      f.input :remote_url
     end
     f.actions
   end
