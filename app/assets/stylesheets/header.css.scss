@@ -1,64 +1,80 @@
-.nav {
-  li a {
-    color: grey;
-    border-bottom: 5px solid white;
-    height: 100%;
-    &:hover {
-      border-bottom: 5px solid #47C885;
-      color: #333;
-      background: none;
-    }
-  }
-  li {
-    height: 100%;
-    // overflow: hidden;
-  }
-  .logo {
-    a {
+.header {
+  .menu {
+    height: 60px;
+    overflow: hidden;
+    width: 960px;
+    margin: auto;
+    text-align: center;
+    .menu_item {
       display: inline-block;
-      line-height: 55px;
-      padding: 0;
-      width: 120px;
-      height: 30px;
+      height: 60px;
+      overflow: hidden;
+      padding: 20px 40px;
+      text-align: center;
       &:hover {
-        border: none;
+        border-bottom: 5px solid #47C885;
+        color: #333;
+        background: none;
       }
     }
-    img {
-      width: 120px;
-      height: 30px;
+    .menu_item a {
+      color: grey;
+      border-bottom: 5px solid white;
+      text-decoration: none;
+      line-height: 20px;
+      height: 100%;
     }
-  }
-}
-
-.header {
-  .callback {
-  background: #47C885;
-  font-size: 20px;
-  font-weight: 200;
-  font-size: 18px;
-  overflow: hidden;
-  white-space: nowrap;
-    img {
-      position: relative;
-      height: 15px;
-      margin-top: -2px;
-      margin-right: 10px;
-      margin-left: -10px
+    .menu_item.logo {
+      padding: 0 20px !important;
+      padding-left: 0 !important;
+      float: left;
+      &:hover {
+        border-bottom: 5px solid #fff;
+      }
+      a {
+        display: inline-block;
+        line-height: 55px;
+        width: 120px;
+        height: 30px;
+        &:hover {
+          border: none;
+        }
+      }
+      img {
+        width: 120px;
+        height: 30px;
+      }
     }
-    &:hover {
+    .menu_item.callback {
       background: #47C885;
-      background: #52D38F;
-    }
-    a {
-      color: white;
-      border-bottom: 0px;
-      position: relative;
-    }
-    &:hover {
+      line-height: 100%;
+      font-weight: 200;
+      font-size: 18px;
+      white-space: nowrap;
+      height: 60px;
+      border-bottom: none;
+      img {
+        position: relative;
+        height: 15px;
+        margin-top: -2px;
+        margin-right: 10px;
+        margin-left: -10px
+      }
+      &:hover {
+        background: #47C885;
+        background: #52D38F;
+        border-bottom: none;
+      }
       a {
         color: white;
-        border: 0;
+        border-bottom: 0px;
+        position: relative;
+      }
+      &:hover {
+        a {
+          color: white;
+          border: 0;
+        }
       }
     }
   }

@@ -2,6 +2,12 @@
   height: 480px;
   background: image-url('main.jpg') no-repeat center center;
   background-size: 100% auto; /* width and height, can be %, px or whatever. */
+  .main-label {
+    width: 960px;
+    margin: auto;
+    padding: 50px;
+    padding-left: 0;
+  }
 }
 
 .main {
