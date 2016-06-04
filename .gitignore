@@ -21,3 +21,6 @@
 config/deploy.rb
 
 config/secrets.yml
+config/database.yml
+
+public/system/*

@@ -6,6 +6,6 @@ class Product < ActiveRecord::Base
   belongs_to :category
 
   def set_photo_by_remote_url
-    self.image = open(URI.parse(remote_url)) if remote_url
+    self.image = open(URI.parse(remote_url)) if remote_url.present?
   end
 end
