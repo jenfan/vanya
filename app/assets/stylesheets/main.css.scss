@@ -5,8 +5,7 @@
   .main-label {
     width: 960px;
     margin: auto;
-    padding: 50px;
-    padding-left: 0;
+    padding: 15px;
   }
 }
 
@@ -22,7 +21,16 @@
   }
 }
 
+.house-cards {
+  text-align: center;
+  width: 960px;
+  margin: auto;
+}
+
 .house-card {
+  width: 320px;
+  display: inline-block;
+  padding: 15px;
   .image img {
     width: 100%;
     max-height: 150px;
@@ -45,9 +53,10 @@
 }
 
 .house-card2,
-.catalog-card {
-  padding: 0 30px;
-  height: 250px;
+.catalog-card,
+.product-card {
+  padding: 15px;
+  height: 300px;
   overflow: hidden;
 
   .image {
@@ -79,6 +88,18 @@
   }
   .right {
     float: right
+  }
+}
+
+.product-card {
+  width: 300px;
+  float: left;
+  .image {
+    width: 50%;
+    overflow: hidden;
+  }
+  .title {
+    width: 50%;
   }
 }
 

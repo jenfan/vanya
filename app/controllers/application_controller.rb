@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
   add_breadcrumb 'Главная', :root_path
-  before_action :load_category
+  before_action :load_category, except: [:about, :contacts]
 
   def main
   end
@@ -21,9 +21,11 @@ class ApplicationController < ActionController::Base
   end
 
   def about
+    add_breadcrumb 'О компании', about_path
   end
 
   def contacts
+    add_breadcrumb 'Контакты', contacts_path
   end
 
   def load_category
