@@ -21,6 +21,11 @@ ActiveAdmin.register Product do
       end
       row :category
       row :description
+      row :photos do |product|
+        product.photos.map do |photo|
+          image_tag photo.image.url(:thumb)
+        end
+      end
     end
   end
 

@@ -8,12 +8,10 @@
     .col-md-7.images
       .col-xs-12.col-md-12
         = image_tag @product.image, class:'thumbnail'
-      .col-xs-6.col-md-4
-        = link_to '#', class:'thumbnail' do
-          = image_tag @product.image
-      .col-xs-6.col-md-4
-        = link_to '#', class:'thumbnail' do
-          = image_tag @product.image
+      - @product.photos.each do |photo|
+        .col-xs-6.col-md-4
+          = link_to '#', class:'thumbnail' do
+            = image_tag photo.image
 
     .col-md-5.info
       h1= @product.title
