@@ -4,5 +4,7 @@ module ApplicationHelper
     price[-4] = price[-4] + ' '
     price[-8] = price[-8] + ' ' if price.size >= 8
     price + ' руб.'
+  rescue
+    '0 руб.'
   end
 end

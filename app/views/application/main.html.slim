@@ -1,7 +1,7 @@
 .container-fluid.main
   .row-fluid
     .main-label
-      h1 СТРОИТЕЛЬСТВО<br> ДЕРЕВЯННЫХ ДОМОВ
+      h1.main_text СТРОИТЕЛЬСТВО<br> ДЕРЕВЯННЫХ ДОМОВ
       = link_to catalog_path do
         button.btn ПОДРОБНЕЕ
 br
@@ -14,7 +14,7 @@ br
           .image
             =image_tag 'dom1.jpg'
           .title
-            h4 Дома из бруса
+            h3 Дома из бруса
             p Замечательные домики из цельного бруса под ключ со всеми гарантиями
 
       = link_to category_path('karkasnie-doma') do
@@ -22,16 +22,16 @@ br
           .image
             =image_tag 'dom2.jpg'
           .title
-            h4 Каркасно-щитовые
+            h3 Каркасно-щитовые
             p Замечательные домики из цельного бруса под ключ со всеми гарантиями
 
       = link_to category_path('otsb') do
         .house-card
-            .image
-              =image_tag 'dom3.jpg'
-            .title
-              h4 Дома из ОЦБ
-              p Замечательные домики из цельного бруса под ключ со всеми гарантиями
+          .image
+            =image_tag 'dom3.jpg'
+          .title
+            h3 Дома из ОЦБ
+            p Замечательные домики из цельного бруса под ключ со всеми гарантиями
 
 .container
   .row

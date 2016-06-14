@@ -9,7 +9,7 @@
       display: inline-block;
       height: 60px;
       overflow: hidden;
-      padding: 20px 40px;
+      padding: 20px 32px;
       text-align: center;
       &:hover {
         border-bottom: 5px solid #47C885;
@@ -23,6 +23,7 @@
       text-decoration: none;
       line-height: 20px;
       height: 100%;
+      font-size: 18px;
     }
     .menu_item.logo {
       padding: 0 20px !important;
