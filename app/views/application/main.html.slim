@@ -22,7 +22,7 @@ br
           .image
             =image_tag 'catalog_karkas_dom.jpg'
           .title
-            h3 Каркасно-щитовые
+            h3 Каркасные дома
             p Замечательные домики из цельного бруса под ключ со всеми гарантиями
 
       = link_to category_path('otsb') do
@@ -36,7 +36,7 @@ br
 .container
   .row
     .row960
-      = link_to category_path('bany') do
+      = link_to category_path('besedki') do
         .house-card2
           .image.left
             = image_tag 'catalog_bani.jpg'
@@ -44,24 +44,19 @@ br
             h1 Дома, беседки, бани, под ключ и&nbsp;с&nbsp;гарантией
             p Замечательные домики из цельного бруса под ключ со всеми гарантиями
 
-br
-br
 .container.main
-  .row960.phones
-    h1 +7 (4912) 76-36-78
-    h1 +7 (915) 620-70-94
-    .image
-      = image_tag 'phone.jpg'
-    .callback
-      .cl-button
-        = link_to main_path do
-          = image_tag 'trubka.svg'
-          | Обратный звонок
+  .phones
+    .row960.phones-div
+      h1 +7 (4912) 76-36-78
+      h1 +7 (961) 130-11-11
+      .image
+        = image_tag 'phone.jpg'
+      .callback
+        .cl-button
+          = link_to main_path do
+            = image_tag 'trubka.svg'
+            | Обратный звонок
 
-br
-br
-br
-br
 .container
   .row
     .col-md-12
