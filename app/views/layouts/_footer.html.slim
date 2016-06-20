@@ -10,20 +10,20 @@ br
         .col-md-10.col-md-offset-1.footer-cell
           .col-md-6.menus
             ul.nav.nav-pills.nav-stacked
-              li Каталог
-              li О компании
-              li Конакты
+              li= link_to 'Каталог', catalog_path
+              li= link_to 'О компании', about_path
+              li= link_to 'Конакты', contacts_path
             ul.nav.nav-pills.nav-stacked
-              li Дома из бруса
-              li Красно щитовые
-              li Дома из ОЦБ
-              li Беседки
-              li Бани
+              li= link_to 'Дома из бруса', category_path('doma_iz_brusa')
+              li= link_to 'Каркасные дома', category_path('karkasnie-doma')
+              li= link_to 'Дома из ОЦБ', category_path('otsb')
+              li= link_to 'Беседки', category_path('besedki')
+              li= link_to 'Бани', category_path('bany')
             ul.nav.nav-pills.nav-stacked
               li Производство
               li Домостроение
-              li Цены
-              li Галерея
+              li= link_to 'Цены', ceny_path
+              li= link_to 'Галерея', gallery_path
           .col-md-6.right-footer
             h4 Вести диалог просто
             p Если у Вас остались к нам вопросы вы можете заполнить форму у нас на сайте и мы перезвоним Вам в любое удобное для Вас время

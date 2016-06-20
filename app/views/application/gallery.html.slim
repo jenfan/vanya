@@ -1,0 +1,28 @@
+.main-catalog
+  .container-fluid.container-breadcrumbs
+    .container
+      .col-md-10.col-md-offset-1
+        = render 'layouts/breadcrumbs'
+
+  br
+  br
+  br
+
+  .container
+    .row
+      .row960
+        h2 Фотогалерея
+
+  - @galleries.in_groups_of(3).each do |gal|
+    .container
+        .row
+          .row960
+            - gal.each do |one|
+              - if one
+                = link_to gallery_show_path(one.id) do
+                  .house-card
+                    .image
+                      = image_tag one.image
+                    .title
+                      h3= one.title
+                      p= one.description

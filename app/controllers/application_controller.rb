@@ -5,10 +5,15 @@ class ApplicationController < ActionController::Base
   add_breadcrumb 'Главная', :root_path
   before_action :load_category, except: [:about, :contacts]
 
-  def main
+  def gallery
+    @galleries = Gallery.all
+    add_breadcrumb 'Галерея', gallery_path
   end
 
-  def catalog
+  def gallery_show
+    @gallery = Gallery.find(params[:id])
+    add_breadcrumb 'Галерея', gallery_path
+    add_breadcrumb @gallery.title, gallery_show_path(@gallery.id)
   end
 
   def category

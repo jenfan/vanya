@@ -4,6 +4,7 @@ class Photo < ActiveRecord::Base
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
   before_save :set_photo_by_remote_url
   belongs_to :product
+  belongs_to :gallery
 
   private
 
