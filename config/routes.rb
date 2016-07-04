@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get 'catalog/:category_url', to: 'application#category', as: :category
   get 'about', to: 'application#about'
   get 'ceny', to: 'application#ceny'
+  get 'proizvodstvo', to: 'application#proizvodstvo'
+  get 'statyi', to: 'application#statyi'
   get 'gallery', to: 'application#gallery'
   get 'gallery/:id', to: 'application#gallery_show', as: :gallery_show
   # get 'product/:id', to: 'application#product', as: :product
