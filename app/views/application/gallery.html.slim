@@ -22,7 +22,7 @@
                 = link_to gallery_show_path(one.id) do
                   .house-card
                     .image
-                      = image_tag one.image
+                      = image_tag one.image.url(:medium)
                     .title
                       h3= one.title
                       p= one.description
