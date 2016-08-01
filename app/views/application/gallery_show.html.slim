@@ -8,11 +8,11 @@
     .col-md-12.images
       .col-xs-12.col-md-12
         h2= @gallery.title
-        = image_tag @gallery.image, class:'thumbnail'
+        = image_tag @gallery.image.url(:large), class:'thumbnail'
       - @gallery.photos.each do |photo|
         .col-xs-6.col-md-4
-          = link_to '#', class:'thumbnail' do
-            = image_tag photo.image
+          = link_to photo.image.url, class:'thumbnail' do
+            = image_tag photo.image.url(:large)
 
   .col-md-10.col-md-offset-1.footer-description
     hr
