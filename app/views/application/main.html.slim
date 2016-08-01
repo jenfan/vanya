@@ -3,7 +3,7 @@
     .main-label
       h1.main_text СТРОИТЕЛЬСТВО<br> ДЕРЕВЯННЫХ ДОМОВ
       = link_to catalog_path do
-        button.btn ПОДРОБНЕЕ
+        button.btn.green-btn ПОДРОБНЕЕ
 br
 br
 .container
@@ -53,8 +53,8 @@ br
       .image
         = image_tag 'phone.jpg'
       .callback
-        .cl-button
-          = link_to main_path do
+        .cl-button{ data-toggle = 'modal' data-target = '#myModal' }
+          a
             = image_tag 'trubka.svg'
             | Обратный звонок
 

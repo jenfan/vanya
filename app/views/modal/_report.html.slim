@@ -1,0 +1,21 @@
+.modal.fade#myModal{ tabindex="-1" role="dialog" aria-labelledby="myModalLabel" }
+  .modal-dialog{ role="document" }
+    .modal-content
+      = form_for Report.new, remote: true do |f|
+        .modal-header
+          button{ type="button" class="close" data-dismiss="modal" aria-label="Close"}
+            span{aria-hidden="true"} &times;
+          h4.modal.title#myModalLabel Modal title
+        .modal-body
+          .form-group
+            label for="name" Имя
+            = f.text_field :name, class: 'form-control'
+          .form-group
+            label for="telefon" Телефон
+            = f.text_field :phone, class: 'form-control'
+          .form-group
+            label for="message" Примечание
+            = f.text_area :notice, rows: 3, class: 'form-control'
+        .modal-footer
+          button.btn.btn-default#close-btn { type="button" data-dismiss="modal"} Закрыть
+          = f.submit "Отправить", class: 'btn btn-primary'

@@ -6,7 +6,9 @@
     .menu_item= link_to 'Каталог', catalog_path
     .menu_item= link_to 'О компании', about_path
     .menu_item= link_to 'Контакты', contacts_path
-    .menu_item.callback
-      = link_to main_path do
+    .menu_item.callback{ data-toggle = 'modal' data-target = '#myModal' }
+      a
         = image_tag 'trubka.svg'
         | Обратный звонок
+
+= render 'modal/report'

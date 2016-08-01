@@ -37,19 +37,15 @@
       h3 Если у вас есть вопросы <br>оставьте заявку
       p Вы можете оставить предварительную заявку на понравившийся Вам проект, и в ближайшее время с Вами свяжется наш менеджер. Заявка не накладывает никаких обязательств, а является щапросом только на получение информации.
     .col-md-5
-      form
+      = form_for Report.new, remote: true do |f|
         .form-group
-          label for="exampleInputEmail1" Имя
-          input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"
+          label for="name" Имя
+          = f.text_field :name, class: 'form-control'
         .form-group
           label for="telefon" Телефон
-          input type="password" class="form-control" id="telefon" placeholder="Password"
+          = f.text_field :phone, class: 'form-control'
         .form-group
-          label for="message" Сообщение
-          textarea class="form-control" rows="3" id='message'
+          label for="message" Примечание
+          = f.text_area :notice, rows: 3, class: 'form-control'
         .form-group
           input type="submit" class="btn button" value='ОСТАВИТЬ ЗАЯВКУ'
-
-
-
-
