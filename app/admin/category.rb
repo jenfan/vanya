@@ -15,7 +15,7 @@ ActiveAdmin.register Category do
       f.input :url
       f.input :name
       f.inputs "Full Description" do
-        f.text_area :header, rows: 20
+        f.text_area :header, class: 'tinymce', rows: 20
       end
     end
     f.actions

@@ -5,6 +5,7 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem 'paperclip', git: "git://github.com/thoughtbot/paperclip.git"
 gem 'yaml_db'
+gem 'tinymce-rails'
 
 gem "breadcrumbs_on_rails"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
