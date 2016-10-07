@@ -19,7 +19,8 @@ Rails.application.routes.draw do
     get ':category_url/:id', to: 'application#product', as: :product
   end
 
-  resources :reports, :pages
+  resources :reports
+  get ':url', to: 'pages#show'
 
   root 'application#main'
   # The priority is based upon order of creation: first created -> highest priority.

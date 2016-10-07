@@ -10,6 +10,7 @@ class PagesController < ApplicationController
   # GET /pages/1
   # GET /pages/1.json
   def show
+    redirect_to root_url unless @page
   end
 
   # GET /pages/new
@@ -20,7 +21,11 @@ class PagesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_page
-      @page = Page.find(params[:id])
+      @page = if params[:url].present?
+                Page.find_by_url params[:url]
+              else
+                Page.find(params[:id]) if params[:id].present?
+              end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
