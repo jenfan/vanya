@@ -1,4 +1,5 @@
 ActiveAdmin.register Report do
+  menu label: 'Заявки'
   permit_params :name, :phone, :notice
 
   index do

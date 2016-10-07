@@ -1,4 +1,5 @@
 ActiveAdmin.register Gallery do
+  menu label: 'Галереи'
   permit_params :title, :description, :full_description, :price, :image
 
   index do

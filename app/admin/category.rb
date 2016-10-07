@@ -1,4 +1,5 @@
 ActiveAdmin.register Category do
+  menu label: 'Категории'
   permit_params :name, :url, :header
 
   index do

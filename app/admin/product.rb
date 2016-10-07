@@ -1,4 +1,5 @@
 ActiveAdmin.register Product do
+  menu label: 'Дома'
   permit_params :title, :description, :full_description, :price, :image, :category_id, :remote_url
 
   index do

@@ -1,4 +1,5 @@
 ActiveAdmin.register Photo do
+  menu label: 'Фото'
   permit_params :image, :product_id, :gallery_id, :remote_url
 
   index do
@@ -9,7 +10,9 @@ ActiveAdmin.register Photo do
     column :image do |photo|
       image_tag photo.image.url(:thumb)
     end
-    column :remote_url
+    column :url_for_page do |photo|
+      photo.image.url
+    end
     actions
   end
 
@@ -21,6 +24,9 @@ ActiveAdmin.register Photo do
         image_tag photo.image.url(:thumb)
       end
       row :remote_url
+      row :url_for_page do |photo|
+        photo.image.url
+      end
     end
   end
 
