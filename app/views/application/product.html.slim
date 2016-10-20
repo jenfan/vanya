@@ -7,10 +7,10 @@
   .col-md-10.col-md-offset-1
     .col-md-7.images
       .col-xs-12.col-md-12
-        = image_tag @product.image, class:'thumbnail'
+        = image_tag @product.image, class:'thumbnail target_photo'
       - @product.photos.each do |photo|
         .col-xs-6.col-md-4
-          = link_to '#', class:'thumbnail' do
+          = link_to '#', class:'thumbnail', onclick:"$('.target_photo').attr('src', '#{photo.image.url}'); return false;" do
             = image_tag photo.image
 
     .col-md-5.info

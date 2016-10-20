@@ -21,7 +21,7 @@ ActiveAdmin.register Photo do
       row :product_id
       row :gallery_id
       row :image do |photo|
-        image_tag photo.image.url(:thumb)
+        image_tag photo.image.url
       end
       row :remote_url
       row :url_for_page do |photo|
